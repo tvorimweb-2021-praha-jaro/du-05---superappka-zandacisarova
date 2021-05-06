@@ -24,7 +24,7 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+     /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -38,6 +38,13 @@ body {
     --svetleFialova: #48418e;
     --tmaveFialova: #25133d;
 }
+
+@media screen and (min-width: 960px) {
+
+    .obal {
+        width: 960px;
+
+    }
 
 .navigace {
     width: 70%;
@@ -195,3 +202,4 @@ body {
 }
 
 
+}
