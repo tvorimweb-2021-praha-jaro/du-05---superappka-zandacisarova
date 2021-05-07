@@ -24,7 +24,7 @@ body {
 }
 
 .obal {
-     /* obsah stránky je omezený do pruhu širokého 960px */
+    max-width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -193,7 +193,7 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 1rem;
-    margin-top: 0;
+    
 }
 
 .popis {
@@ -275,9 +275,18 @@ body {
     .moznost {
         padding: 0 0.5rem;
     }
+
+    .tema {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 960px) {
+
+    .hero {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
 
     .telefon {
         display: flex;
@@ -294,94 +303,18 @@ body {
         padding-left: 0;
     }
 
-    
-
-   
-
-    .tlacitka {
-        width: 80%;
-        padding-bottom: 2rem;
+    .uzasny br {
         display: flex;
-        justify-content: space-between;
-        padding-left: 1px;
-
-    }
-
-    .button {
-        width: fit-content;
-        padding: 1rem 2rem;
-        border-radius: 0.4rem;
-        border: 0.5px solid white;
-        background-color: transparent;
-        box-shadow: 0 4px 10px rgba(37, 19, 61, 0.5);
-        cursor: pointer;
-        
-    }
-
-    .stahnoutZdarma {
-        background-color: var(--svetleFialova);
-    }
-
-    .stahnoutZdarma:hover {
-        background-color: transparent;
-        border: none;
-        box-shadow: 0 0 3px white;
-    }
-
-    .viceInformaci:hover {
-        background-color: var(--svetleFialova);
-        border: none;
-    }
-
-    .button p {
-        margin: 0;
-        font-size: 1rem;
-        font-weight: 400;
-        color: white;
-    }
-
-    .button a {
-        text-decoration: none;
-    }
-
-    .info {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1rem 1rem;
-    }
-
-    .logo {
-        margin-bottom: 0;
     }
 
     .moznost {
-        display: block;
-        text-align: center;
         padding: 1rem;
     }
 
-    .tema {
-        color: var(--svetleFialova);
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin: 1rem;
-    }
+   
 
-    .popis {
-        font-size: 12pt;
-    }
-    .paticka {
-        text-align: center;
-        background-color: var(--svetleFialova);
-        color: white;
-        font-weight: 300;
-        font-size: 0.7rem;
-        padding: 0.5rem;
-    }
-
-    .konec {
-        margin: 0;
-    }
+    
+    
 
 
 }
