@@ -76,8 +76,7 @@ body {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     padding: 0.5rem 2rem 2rem 2rem;
 }
 
@@ -88,7 +87,8 @@ body {
 .uvodniText {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    align-items: stretch;
+
     color: white;   
 }
 
@@ -106,10 +106,7 @@ body {
 }
 
 .tlacitka {  
-    display: flex;
-    flex-flow: column;
-    align-items: center; 
-    justify-content: center;  
+    display: block;  
 }
 
 .button { 
@@ -171,6 +168,11 @@ body {
 
 .logo {
     margin-bottom: 0;
+    transition: all 2s ease;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
 }
 
 .moznost {
@@ -267,12 +269,31 @@ body {
     .hero {
         padding-right: 0;
         padding-bottom: 0;
+        justify-content: space-between;
+        
     }
 
-    .telefon {
+    .telefon { 
         display: flex;
         justify-content: flex-end;
-        margin-top: 3rem;   
+        margin-top: 3rem; 
+        z-index: 1;
+        animation-name: zobrazeni-logo;
+        animation-duration: 2.5s;
+        animation-iteration-count: initial;  
+        animation-timing-function: ease-in;
+        
+    }
+
+    @keyframes zobrazeni-logo {
+        from {
+            opacity: 0;           
+        }
+
+        to {
+            opacity: 1;
+                      
+        }
     }
 
     .superAppka {
