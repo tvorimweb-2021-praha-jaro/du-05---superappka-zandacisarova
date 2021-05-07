@@ -14,6 +14,7 @@ html { box-sizing: border-box; }
 */
 
 body {
+    width: auto;
     padding: 0;
     margin: 0;
     background-color: #e5e5e5;
@@ -60,7 +61,6 @@ body {
     margin: 0;
 }
 
-
 .odkaz p {
     margin: 0.7rem;
 }
@@ -69,7 +69,6 @@ body {
     background-color: var(--svetleFialova);
     color: white;
 }
-
 
 .hero {
     background-image: url(/images/pozadi.jpg);
@@ -80,22 +79,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem 2rem 2rem;
-
 }
 
 .telefon {
-    display: none;
-    
+    display: none;   
 }
 
 .uvodniText {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    color: white;
-    
+    color: white;   
 }
-
 
 .superAppka {
     font-weight: normal;
@@ -107,28 +102,26 @@ body {
 .uzasny {
     font-weight: 300;
     font-size: 2rem;
-    margin: 1rem 0;
-    
+    margin: 1rem 0;   
 }
 
-.tlacitka {
-    display: block;   
-    
-}
-
-.button {
+.tlacitka {  
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column;
+    align-items: center; 
+    justify-content: center;  
+}
+
+.button { 
     width: 100%;
+    margin: 0;
     padding: 1rem 0;
     border-radius: 0.4rem;
     border: 0.5px solid white;
     background-color: transparent;
     box-shadow: 0 4px 10px rgba(37, 19, 61, 0.5);
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
+         
 }
 
 .stahnoutZdarma {
@@ -155,14 +148,12 @@ body {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
-    color: white;
-    
-    
+    color: white;   
 }
 
 .button a {
     text-decoration: none;
-    margin: auto;
+    margin: 0;
 }
 
 .info {
@@ -184,21 +175,20 @@ body {
 
 .moznost {
     display: block;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .tema {
     color: var(--svetleFialova);
     font-weight: 700;
     font-size: 1.5rem;
-    margin: 1rem;
-    
+    margin: 1rem;   
 }
 
 .popis {
     font-size: 12pt;
 }
+
 .paticka {
     text-align: center;
     background-color: var(--svetleFialova);
@@ -214,10 +204,6 @@ body {
 
 @media screen and (min-width: 480px) {
 
-    
-
-    
-    
     .uzasny br {
         display: none;   
     }
@@ -228,18 +214,14 @@ body {
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
-        
     }
 
    .button {
         width: fit-content;
         padding: 1rem 2rem;
         margin: 0;
-        margin-right: 1rem;
-        
-    }
-
-    
+        margin-right: 1rem;   
+    }   
 }
 
 @media screen and (min-width: 660px) {
@@ -247,7 +229,6 @@ body {
     .navigace {
         display: flex;
         justify-content: flex-start;
-
     }
 
     .odkaz {
@@ -294,8 +275,6 @@ body {
         margin-top: 3rem;   
     }
 
-
-
     .superAppka {
         font-weight: normal;
         font-size: 5.5rem;
@@ -310,11 +289,5 @@ body {
     .moznost {
         padding: 1rem;
     }
-
-   
-
-    
-    
-
 
 }
