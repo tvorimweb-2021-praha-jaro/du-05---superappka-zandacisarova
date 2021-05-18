@@ -58,11 +58,7 @@ body {
     text-decoration: none;
     color: var(--svetleFialova);
     text-align: center;
-    margin: 0;
-}
-
-.odkaz p {
-    margin: 0.7rem;
+    padding: 0.7rem;
 }
 
 .odkaz:hover {
@@ -118,6 +114,7 @@ body {
     background-color: transparent;
     box-shadow: 0 4px 10px rgba(37, 19, 61, 0.5);
     cursor: pointer;  
+    text-decoration: none;
          
 }
 
@@ -153,7 +150,7 @@ body {
     margin: 0;
 }
 
-.info {
+ul {
     display: block;
     justify-content: space-evenly;
     padding: 1rem 2rem;
@@ -235,7 +232,7 @@ body {
 
     .odkaz {
         width: auto;
-        padding: 0 1rem;
+        padding: 0.7rem 1rem;
     }
 
     .superAppka {
@@ -246,7 +243,9 @@ body {
         font-size: 3rem;
     }
     
-    .info {
+
+
+    ul {
         display: flex;
     }
 
